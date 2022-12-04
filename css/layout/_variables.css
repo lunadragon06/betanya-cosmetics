@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    color: var(--text-color);
+    font-family: 'Noto Sans', sans-serif;
+    height: 100%;
+}
+
+body {
+    background: #fbfbfb;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+:root {
+    --assets-color: #ffffff;
+    --primary-color: #db2a58;
+    --primary-hover: #D90D32;
+    --secondary-color: #f2dfed;
+    --tertiary-color: #508200;
+    --tertiary-hover: #39471e;
+    --text-color: #082126;
+}
