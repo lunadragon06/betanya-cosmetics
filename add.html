@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Betanya Cosmetics | Add product</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+  <body>
+    <nav class="menu-container"></nav>
+    
+    <div class="wrapper" id="form-page">
+    <h1>Add product</h1>
+
+    <form class="add-form">
+      <div class="message-container"></div>
+          <input class="formfield" id="name" placeholder="Name" />
+
+          <input class="formfield" id="brand" placeholder="Brand" />
+
+          <input class="formfield" id="price" placeholder="Price" />
+
+        <input class="formfield" id="quantity" placeholder="Quantity number" value="1" />
+
+      <select class="formfield" id="category">
+        <option value="">Category</option>
+        <option value="blush">Blush</option>
+        <option value="lipstick">Lipstick</option>
+        <option value="mascara">Mascara</option>
+        <option value="powder">Powder</option>
+      </select>
+
+      <input type="file" name="uploadfile" id="img" style="display: none;" disabled />
+      <label for="img" class="upload">
+          <i class="fas fa-upload" style="color: #646464;"></i>
+          <span class="upload-txt"> Image upload (currently disabled)</span>
+      </label>
+
+          <textarea class="formfield" id="description" placeholder="Description"></textarea>
+
+      <button class="formbtn" id="update">Add new product</button>
+        <div class="delete-container"></div>
+    </form>
+    
+    </div>
+    <footer class="footer">
+      <span class="footer__copyright">
+        2022 @ Monika Lie
+      </span>
+      <span class="footer__media">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-snapchat-ghost"></i>
+        <i class="fab fa-tiktok"></i>
+      </span>
+    </footer>
+    <script src="js/add.js" type="module" defer></script>
+  </body>
+</html>
