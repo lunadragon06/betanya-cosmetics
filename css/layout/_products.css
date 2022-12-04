@@ -1,0 +1,28 @@
+img {
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin: 1.4rem auto 6rem;
+  max-width: 1280px;
+  padding: 2rem 3rem 0;
+}
+
+.product {
+  flex: 1 0 200px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 1px 1px;
+}
+
+.product img {
+  border-radius: 4px 4px 0 0;
+}
+
+.price-tag {
+  font-size: 20px;
+  margin-top: .5rem;
+}
