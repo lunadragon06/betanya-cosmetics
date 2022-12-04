@@ -15,8 +15,6 @@ Live site to this project is currently unavailable as this project will still be
 - [ ] New functionalities and improvements for admin and especially users will most likely be added 
 #### Login info 🔐
 The login information is exactly the same as for Project Exam 2 (Torf's Gallery of Art) which has been provided from my other GitHub repo (taken from my other account) [here](https://github.com/lunadragon06/torfs-art-gallery). Same base API url was used, since I currently don't have energy nor capacity to make new publicly hosted.  
-#### Warning ⚠️
-This project is just half finished! 
 ## 🔧 Built With
 I used these following tech stack to build this project:
 - [Cloudinary](https://www.cloudinary.com/)
