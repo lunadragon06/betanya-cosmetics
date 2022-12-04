@@ -14,9 +14,9 @@ Live site to this project is currently unavailable as this project will still be
 + delete a single product from both site and API 
 - [ ] New functionalities and improvements for admin and especially users will most likely be added 
 #### Login info 🔐
-The login information is exactly the same as for Project Exam 2 (Torf's Gallery of Art) which has been provided from my other GitHub repo (taken from my other account) [here](https://github.com/lunadragon06/torfs-art-gallery). 
+The login information is exactly the same as for Project Exam 2 (Torf's Gallery of Art) which has been provided from my other GitHub repo (taken from my other account) [here](https://github.com/lunadragon06/torfs-art-gallery). Same base API url was used, since I currently don't have energy nor capacity to make new publicly hosted.  
 #### Warning ⚠️
-<b>Obs!</b> This project is just half finished! 
+This project is just half finished! 
 ## 🔧 Built With
 I used these following tech stack to build this project:
 - [Cloudinary](https://www.cloudinary.com/)
@@ -25,12 +25,12 @@ I used these following tech stack to build this project:
 - [SASS](https://sass-lang.com/)
 - [Strapi](https://strapi.io/) 
 ## 🚀 Getting Started
-### How to run project ✨
+### How to view this project successfully ✨
 Coming soon ... 
-### Host locally 💻
-Coming soon ...
-<br>
-And we should be good to go!
+### Run the website 💻
+It is recommended that this site is viewed from VSC (Visual Studio Code) or other code editor program of your choice (for free) from your computer by opening ``index.html`` file and then clicking on ``Go Live`` button/link that should be located somewhere at the bottom right corner of the program. In this way we can ensure that the site will be able to run. 
+<br><br>
+If ``Go Live`` doesn't exsist, ``Live Server`` should be installed and then restart code editor before we can get the most out of previewing site.  
 ## 🔗 Contributing
 To contribute to this project, please create a new branch that can be reviewed and merged.
 ## 🏅 License
