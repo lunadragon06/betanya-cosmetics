@@ -1,0 +1,62 @@
+.add-to-cart {
+    background: #E21675;
+    border: none;
+    cursor: pointer;
+    padding: 1rem;
+    text-transform: uppercase;
+    transition: .5s;
+    width: 100%;
+    border-radius: 0 0 4px 4px;
+}
+
+.add-to-cart i {
+    color: white;
+    transition: .5s;
+}
+
+.add-to-cart:hover {
+    background: #D90D32;
+}
+
+.add-to-cart:active,
+.add-to-cart:focus {
+    background: #0E6500;
+}
+
+.cta-button {
+    background: var(--tertiary-color);  
+    color: var(--assets-color);
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.cta-button:hover {
+    background: var(--tertiary-hover);  
+}
+
+#logout {
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#logout-icon {
+    font-size: 24px;
+}
+
+#update {
+    background: #097f67;
+    color: white;
+    margin-top: 1.5rem;
+}
+
+#update:hover {
+    background: #056074;
+}
+
+#delete {
+    margin-top: 1rem;
+}
