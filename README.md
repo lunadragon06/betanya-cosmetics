@@ -24,16 +24,18 @@ I used these following tech stack to build this project:
 - [Strapi](https://strapi.io/) 
 ## 🚀 Getting Started
 ### How to view this project successfully ✨
-Coming soon ... 
+``Download ZIP`` directly from this repo by clicking on the green ``<> Code`` button, or clone the repo by typing this command in your terminal:
+```bash
+git clone https://github.com/lunadragon06/betanya-cosmetics.git
+```
 ### Run the website 💻
-It is recommended that this site is viewed from VSC (Visual Studio Code) or other code editor program of your choice (for free) from your computer by opening ``index.html`` file and then clicking on ``Go Live`` button/link that should be located somewhere at the bottom right corner of the program. In this way we can ensure that the site will be able to run. 
+It is recommended that this site is opened and viewed from VSC (Visual Studio Code) or other code editor program of your choice (for free) from your computer by opening ``index.html`` file and then clicking on ``Go Live`` button/link that should be located somewhere at the bottom right corner of the program. In this way we can ensure that the site will be able to run. 
 <br><br>
 If ``Go Live`` doesn't exsist, ``Live Server`` should be installed and then restart code editor before we can get the most out of previewing site.  
 ## 🔗 Contributing
 To contribute to this project, please create a new branch that can be reviewed and merged.
 ## 🏅 License
-This is a redesign and attempted improved version of my [semester project repo](https://github.com/LunaDragon666/) from my other GitHub account, which I didn't manage to finish for Portfolio 2 submission in time in this case. 
+This is a redesign and attempted improved version of my semester project repo from my other GitHub account, which I didn't manage to finish for Portfolio 2 submission in time in this case. 
 ## 🤙 Contact me
-[Email](mailto:monika.ml@outlook.com) <br>
 [LinkedIn](https://www.linkedin.com/in/monika-lie/)
 <br><br>
