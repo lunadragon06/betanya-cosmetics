@@ -1,162 +1,101 @@
-nav {
-    z-index: 999;
-    width: 100%;
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
+.menu {
     align-items: center;
-    background-color: #DC2A6B;
-    padding: 2.5rem 0;
+    background: #DC2A6B;
     box-shadow: rgb(0 0 0 / 10%) 0px 15px 30px;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    padding: 2.5rem 0;
+    width: 100%;
+    z-index: 999;
 }
 
-.logo {
+.menu__logo {
+    color: #ffffff;
     font-family: 'Noto Sans', sans-serif;
     font-size: 20px;
-    color: #fff;
-    text-decoration: none;
     margin-left: 25px;
-}
-
-nav ul {
-    background-color: transparent;
-}
-
-nav ul li {
-    font-family: 'Noto Sans', sans-serif;
-    display: inline-block;
-    font-size: 20px;
-    padding: 0 15px;
-}
-
-nav ul li a {
     text-decoration: none;
-    color: #fff;
 }
 
+/* 
+    HAMBURGER MENU TOGGLE
+*/
 input[type="checkbox"] {
     display: none;
 }
 
-#toggler {
-    width: 100px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
+.menu__toggler {
     align-items: center;
-    color: #fff;
-    font-weight: bolder;
+    color: #ffffff;
     font-size: 20px;
+    font-weight: bold;
+    height: 35px;
+    justify-content: center;
+    width: 100px;
+    /* are included so mobile menu works */
+    display: flex;
     display: none;
 }
 
-#toggler span {
-    font-family: "Roboto", serif;
+/* Navigation bar menu */
+.menu 
+.menu__links 
+.menu__item {
+    display: inline-block;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    padding: 0 15px;
 }
 
-#navbar-form {
-    position: relative;
+.menu 
+.menu__links 
+.menu__item 
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* 
+    USER INTERFACE MENU 
+*/
+.menu__userinterface {
     display: inline-flex;
-    margin-right: 25px;
     gap: 15px;
+    margin-right: 25px;
+    position: relative;
 }
 
-#search-form {
-    display: inline-flex;
-    width: 370px;
-    height: 40px;
-    position: absolute;
-    right: 100%;
-    transform: scale(0,0);
-    transform-origin: center right;
-    transition: 0.4s transform linear;
-}
-
-#search-bar {
-    width: 290px;
-    height: 40px;
-    padding: 10px;
-    color: #000;
-    font-size: 18px;
-}
-
-#search-btn {
-    width: 80px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    color: #fff;
-    border: none;
-    outline: none;
-    background-color: #414141;
-}
-
-#search-form-opener {
-    width: 60px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: 25px;
-    font-weight: bolder;
-}
-
-#search-form-closer {
-    width: 60px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    font-size: 25px;
-    font-weight: bolder;
-    background-color: rgba(0, 0, 0, 0.65);
-    display: none;
-}
-
-#box-2:checked ~ #search-form {
-    transform: scale(1,1);
-}
-
-#box-2:checked ~ #search-form-opener {
-    display: none;
-}
-
-#box-2:checked ~ #search-form-closer {
-    display: flex;
-}
-
-@media (max-width:768px) {
-    #toggler {
+@media (max-width: 768px) {
+    .menu__toggler {
         display: flex;
     }
-
-    nav ul {
-        position: absolute;
-        top: 80px;
+    #toggle:checked ~ .menu__links {
+        left: 0;
+    }
+    .menu 
+    .menu__links {
+        background: #F6CED6;
         left: -100%;
         height: 19.25rem;
-        width: 100%;
-        text-align: center;
-        transition: 0.8s ease-in-out;
-        background: #F6CED6;
-        z-index: 1;
         padding: 1rem 0 3rem;
+        position: absolute;
+        text-align: center;
+        top: 80px;
+        transition: 0.8s ease-in-out;
+        width: 100%;
+        z-index: 1;
     }
-
-    nav ul li {
+    .menu 
+    .menu__links 
+    .menu__item {
         display: block;
         padding: 20px 0px;
     }
-
-    nav ul li a {
-        color: black;
-    }
-
-    #box-1:checked ~ ul {
-        left: 0;
+    .menu 
+    .menu__links 
+    .menu__item 
+    a {
+        color: #071d03;
     }
 }
