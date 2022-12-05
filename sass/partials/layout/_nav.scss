@@ -1,0 +1,101 @@
+.menu {
+    align-items: center;
+    background: #DC2A6B;
+    box-shadow: rgb(0 0 0 / 10%) 0px 15px 30px;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    padding: 2.5rem 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.menu__logo {
+    color: #ffffff;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    margin-left: 25px;
+    text-decoration: none;
+}
+
+/* 
+    HAMBURGER MENU TOGGLE
+*/
+input[type="checkbox"] {
+    display: none;
+}
+
+.menu__toggler {
+    align-items: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    height: 35px;
+    justify-content: center;
+    width: 100px;
+    /* are included so mobile menu works */
+    display: flex;
+    display: none;
+}
+
+/* Navigation bar menu */
+.menu 
+.menu__links 
+.menu__item {
+    display: inline-block;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    padding: 0 15px;
+}
+
+.menu 
+.menu__links 
+.menu__item 
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* 
+    USER INTERFACE MENU 
+*/
+.menu__userinterface {
+    display: inline-flex;
+    gap: 15px;
+    margin-right: 25px;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .menu__toggler {
+        display: flex;
+    }
+    #toggle:checked ~ .menu__links {
+        left: 0;
+    }
+    .menu 
+    .menu__links {
+        background: #F6CED6;
+        left: -100%;
+        height: 19.25rem;
+        padding: 1rem 0 3rem;
+        position: absolute;
+        text-align: center;
+        top: 80px;
+        transition: 0.8s ease-in-out;
+        width: 100%;
+        z-index: 1;
+    }
+    .menu 
+    .menu__links 
+    .menu__item {
+        display: block;
+        padding: 20px 0px;
+    }
+    .menu 
+    .menu__links 
+    .menu__item 
+    a {
+        color: #071d03;
+    }
+}
