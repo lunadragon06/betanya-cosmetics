@@ -34,16 +34,6 @@ i {
     font-size: 20px;
 }
 
-:root {
-    --assets-color: #ffffff;
-    --primary-color: #db2a58;
-    --primary-hover: #D90D32;
-    --secondary-color: #f2dfed;
-    --tertiary-color: #508200;
-    --tertiary-hover: #39471e;
-    --text-color: #082126;
-}
-
 @media (max-width: 768px) {
     h1 {
         text-align: left;
