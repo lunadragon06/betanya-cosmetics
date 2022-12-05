@@ -5,7 +5,6 @@ import { getToken } from "./utils/storage.js";
 import deleteButton from "./components/products/deleteButton.js";
 
 const token = getToken();
-
 if (!token) {
     location.href = "/login.html";
 }
@@ -23,17 +22,17 @@ if (!id) {
 const productUrl = baseUrl + "products/" + id;
 
 const form = document.querySelector("form");
-const name = document.querySelector("#title");
+const name = document.querySelector("#name");
 const brand = document.querySelector("#brand");
-const price = document.querySelector("#year");
-const quantity = document.querySelector("#month");
+const price = document.querySelector("#price");
+const quantity = document.querySelector("#quantity");
 const category = document.querySelector("#category");
 const image = document.querySelector("#image");
 const description = document.querySelector("#description");
 const idInput = document.querySelector("#id");
 const message = document.querySelector(".message-container");
 
-const loading = document.querySelector(".loading");
+const loading = document.querySelector(".loader");
 
 (async function () {
     try {
@@ -50,8 +49,8 @@ const loading = document.querySelector(".loading");
         idInput.value = details.id;
 
         deleteButton(details.id);
-
         console.log(details);
+
     } catch (error) {
         console.log(error);
     } finally {
@@ -78,14 +77,12 @@ function submitForm(event) {
     if (nameValue.length === 0 || brandValue.length === 0 || isNaN(priceValue) || isNaN(quantityValue) || categoryValue.length === 0 || descriptionValue.length === 0) {
         return displayMessage("warning", "Please supply proper values", ".message-container");
     }
-
     updateProduct(nameValue, brandValue, priceValue, quantityValue, categoryValue, descriptionValue, idValue);
 }
 
 async function updateProduct(name, brand, price, quantity, category, description, id) {
     const url = baseUrl + "products/" + id;
     const data = JSON.stringify({ name: name, brand: brand, price: price, quantity: quantity, category: category, description: description });
-
     const token = getToken();
 
     const options = {
