@@ -1,5 +1,5 @@
-$--asset-color: #ffffff;
-/* $--asset-color */
+$--primary-font: 'Noto Sans', sans-serif;
+/* $--primary-font */
 
 $screen: (
     desktop-size: 1280px,
@@ -17,6 +17,20 @@ $screen: (
     ... 
 }
 */
+
+$colors: (
+  asset-color: #ffffff,
+  cta-color: #e21675,
+  link-color: #508200,
+  main-button-hover: #D90D32,
+  primary-color: #dc2a6b,
+  secondary-color: #0e6500,
+  tertiary-color: #071d03,
+);
+
+@function get($color) {
+  @return map-get($colors, $color);
+}
 
 * {
   margin: 0;
