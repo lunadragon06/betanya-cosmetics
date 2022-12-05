@@ -1,0 +1,42 @@
+#form-page {
+    margin: 4rem auto 6rem;
+    max-width: 600px;
+    padding: 2.5rem;
+}
+
+/* 
+    DEFAULT FORM STYLING  
+*/
+form {
+    margin-top: 2rem;
+}
+
+/* Inputs ~ Layout */
+.formfield, 
+.upload {
+    width: 100%;
+}
+
+input:disabled {
+    background: #d5d5d5;
+}
+
+textarea {
+    height: 150px;
+    max-width: 100%;
+}
+
+/*  LOGIN FORM
+    View typed password 
+*/
+.checkpassword {
+    align-items: end;
+    display: flex;
+    justify-content: start;
+}
+
+.checkpass {
+    display: unset !important;
+    margin: 0 .75rem 0 0;
+    width: 10px;
+}
