@@ -4,26 +4,44 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Betanya Cosmetics | Products</title>
+    <title>
+      Betanya Cosmetics | Products
+    </title>
     <link href="css/styles.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   </head>
   <body>
+    <!-- NAV -->
     <nav class="menu-container"></nav>
-    
+    <!-- 
+      Make footer stay at the bottom of the page 
+      ~ Code starts here 
+    -->
     <div class="wrapper" id="products">
-      
-    <section class="product-display">
-    <h1>Products</h1>
-      <a class="add" href="add.html">
-        Add new product
-      </a>
-      <div class="product-container">
-        Loading products ...
-      </div>
+    <!-- MAIN CONTENT ~ Product management (admin) -->
+    <section class="display">
+      <!-- Heading -->
+    <h1>
+      Products
+    </h1>
+    <!-- 
+      Add new product CTA-button 
+    -->
+    <a class="display__addbtn" href="add.html">
+      Add new product
+    </a>
+    <!-- 
+      Product API Call 
+    -->
+    <div class="display__products">
+      Loading products ...
+    </div>
     </section>
-    
+    <!-- 
+      Make footer stay at the bottom of the page 
+      ~ Code ends here 
+    -->
     </div>
     <footer class="footer">
       <span class="footer__copyright">
