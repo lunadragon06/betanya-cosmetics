@@ -9,24 +9,37 @@
     </title>
     <link href="css/styles.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-    <!-- https://fontawesome.com/v5/search -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   </head>
   <body>
+    <!-- NAV -->
     <nav class="menu-container"></nav>
-    <!-- Shopping cart -->
-    <div class="shopping-cart"></div>
+    <!-- 
+      Make footer stay at the bottom of the page 
+      ~ Code starts here 
+    -->
     <div class="wrapper" id="home">
-      <!-- Header -->
-      <header>Loading products ...</header>
-
-    <!-- Loading indicator -->
-    <span class="loading">Loading ...</span>
-
-    <!-- Product display -->
-    <div class="products"></div>
-    <div class="results"></div>
+    <!-- HEADER -->
+    <header></header>
+    <!-- 
+      Loading indicator(s) 
+    -->
+    <section class="loader">
+      <p class="loader__text">
+        Loading products ...
+      </p>
+      <span class="loader__object">
+        <div></div>
+      </span>
+    </section>
+    <!-- MAIN CONTENT ~ Product display -->
+    <section class="products"></section>
+    <!-- 
+      Make footer stay at the bottom of the page 
+      ~ Code ends here 
+    -->
     </div>
+    <!-- FOOTER -->
     <footer class="footer">
       <span class="footer__copyright">
         2022 @ Monika Lie
