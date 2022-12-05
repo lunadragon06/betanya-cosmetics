@@ -1,9 +1,3 @@
-img {
-  width: 100%;
-  object-fit: cover;
-  height: 250px;
-}
-
 .products {
   display: flex;
   flex-wrap: wrap;
@@ -13,16 +7,113 @@ img {
   padding: 2rem 3rem 0;
 }
 
+/* Single product display 
+  from homepage 
+*/
 .product {
   flex: 1 0 200px;
   box-shadow: rgb(0 0 0 / 10%) 0px 1px 1px;
 }
 
-.product img {
-  border-radius: 4px 4px 0 0;
+.product__card {
+  background: white;
+  line-height: 50px;
+  margin-top: -.35rem;
+  padding: 1.5rem 1rem 2rem;
+  text-align: center;
 }
 
-.price-tag {
+.product__img {
+  border-radius: 4px 4px 0 0;
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.product__item {
+  text-transform: capitalize;
+}
+
+.product__pricetag {
   font-size: 20px;
   margin-top: .5rem;
+}
+
+/* 
+  PRODUCTS ~ ADMIN PAGE 
+*/
+.display {
+  margin: 4rem auto 6rem;
+  max-width: 1280px;
+  padding: 0 2.75rem;
+}
+
+/* Single product card */
+.productitem {
+  background: white;
+  border-radius: 5px;
+  margin: 2rem 0;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: rgb(0 0 0 / 10%) 0px 1px 4px 0px;
+}
+
+.productitem__content {
+  display: flex;
+}
+
+.productitem__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 25px;
+  padding: 0 1.5rem;
+}
+
+.productitem__setting {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.productitem__view {
+  border-radius: 50% !important;
+  height: 150px;
+  object-fit: cover;
+  width: 150px;
+}
+
+@media (max-width: 768px) {
+  .display {
+    margin: 2rem auto 2.5rem;
+    padding: 0 2rem;
+  }
+  .products {
+    gap: 35px;
+    margin: .75rem auto 2.75rem;
+    padding: 2rem 2rem 0;
+  }
+  .productitem {
+    flex-direction: column;
+  }
+  .productitem__content {
+      display: unset;
+  }
+  .productitem__details {
+    padding: 1rem 0 2rem;
+  }
+  .productitem__setting {
+    margin-top: 1rem;
+  }
+  .productitem__setting p {
+    margin-bottom: 1rem;
+    text-align: left !important;
+  }
+  .productitem__view {
+    border-radius: 0 !important;
+    height: auto;
+    width: 100%;
+  }
 }
