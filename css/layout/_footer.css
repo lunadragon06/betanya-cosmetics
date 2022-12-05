@@ -1,6 +1,6 @@
 footer {
     background: #DC2A6B;
-    color: var(--assets-color);
+    color: white;
     display: flex;
     flex-direction: row;
     flex-shrink: 0;
