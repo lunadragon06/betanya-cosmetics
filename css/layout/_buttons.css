@@ -1,3 +1,12 @@
+button {
+    border-radius: 4px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* 
+    HOME 
+    CTA-button 
+*/
 .header__ctabtn {
     background: #0E6500;
     border-radius: 4px;
@@ -11,10 +20,10 @@
 }
 
 .header__ctabtn:hover {
-    background: var(--tertiary-color);
+    background: #508200;
 }
 
-/* Cart button ~ HOME */
+/* Cart button */
 .product__cartbtn {
     background: #E21675;
     border: none;
@@ -43,7 +52,6 @@
 /* 
     ADMIN SECTIONS
 */
-/* Add new product */
 .display__addbtn {
     background: #E21675;
     border-radius: 4px;
@@ -69,22 +77,16 @@
     transition: .5s;
 }
 
-@media (max-width: 768px)  {
-    .display__addbtn {
-        margin: 2rem 0 1rem;
-    }
-}
-
 /* 
     FORM BUTTONS 
 */
-button {
-    border-radius: 4px;
-    font-family: 'Noto Sans', sans-serif;
+#delete {
+    margin-top: 1rem;
 }
 
-.formbtn, .delete {
-    background: #DF0161;
+.delete, 
+.formbtn {
+    background: #E21675;
     border: none;
     color: #ffffff;
     cursor: pointer;
@@ -98,25 +100,27 @@ button {
     width: 100%;
 }
 
-form-btn:active,
+.delete:active,
+.form-btn:active,
+.delete:focus, 
 .formbtn:focus, 
+.delete:hover, 
 .formbtn:hover {
-    background: #F23D91;
+    background: #D90D32;
 }
 
-.cta-button {
-    background: var(--tertiary-color);  
-    color: var(--assets-color);
-    display: inline-block;
-    padding: 1rem;
-    text-decoration: none;
-    transition: .5s;
+/* Update product button */
+#update {
+    background: #097f67;
+    color: white;
+    margin-top: 1.5rem;
 }
 
-.cta-button:hover {
-    background: var(--tertiary-hover);  
+#update:hover {
+    background: #056074;
 }
 
+/* Logout button */
 #logout {
     font-size: 20px;
     background: transparent;
@@ -128,16 +132,8 @@ form-btn:active,
     font-size: 24px;
 }
 
-#update {
-    background: #097f67;
-    color: white;
-    margin-top: 1.5rem;
-}
-
-#update:hover {
-    background: #056074;
-}
-
-#delete {
-    margin-top: 1rem;
+@media (max-width: 768px)  {
+    .display__addbtn {
+        margin: 2rem 0 1rem;
+    }
 }
