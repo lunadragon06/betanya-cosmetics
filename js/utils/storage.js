@@ -15,11 +15,9 @@ export function saveUser(user) {
 
 export function getUsername() {
     const user = getFromStorage(userKey);
-
     if (user) {
         return user.username;
     }
-
     return null;
 }
 
@@ -37,6 +35,5 @@ function getFromStorage(key) {
     if (!value) {
         return null;
     }
-
     return JSON.parse(value);
 }
