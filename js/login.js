@@ -6,7 +6,7 @@ import { saveToken, saveUser } from "./utils/storage.js";
 const form = document.querySelector("form");
 const message = document.querySelector(".message-container");
 const password = document.querySelector("#password");
-const showPassword = document.querySelector(".checkpass");
+const showPassword = document.querySelector(".checkpassword__box");
 const username = document.querySelector("#username");
 
 createMenu();
@@ -15,7 +15,7 @@ form.addEventListener("submit", submitForm);
 
 function submitForm(event) {
     event.preventDefault();
-
+    
     message.innerHTML = "";
 
     const usernameValue = username.value.trim();
@@ -24,7 +24,6 @@ function submitForm(event) {
     if (usernameValue.length === 0 || passwordValue.length === 0) {
         return displayMessage("warning", "Username or email and password are required.", ".message-container");
     }
-
     doLogin(usernameValue, passwordValue);
 }
 
