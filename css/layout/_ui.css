@@ -11,14 +11,36 @@ form {
     margin-top: 2rem;
 }
 
-/* Inputs ~ Layout */
+/* 
+    Inputs ~ Layout 
+*/
 .formfield, 
 .upload {
     width: 100%;
 }
 
+input, 
+select, 
+textarea, 
+.upload {
+    background: #f9f7f7;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: inline-block;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+}
+
 input:disabled {
     background: #d5d5d5;
+}
+
+/* Input placeholder text-color */ 
+select, 
+.upload-txt,
+::-webkit-input-placeholder {
+    color: #646464;
 }
 
 textarea {
@@ -35,8 +57,12 @@ textarea {
     justify-content: start;
 }
 
-.checkpass {
+.checkpassword__box {
     display: unset !important;
     margin: 0 .75rem 0 0;
     width: 10px;
 }
+
+/*  
+    ADD PRODUCT FORM 
+*/
