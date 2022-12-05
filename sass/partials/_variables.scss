@@ -1,0 +1,19 @@
+$--asset-color: #ffffff;
+/* $--asset-color */
+
+$screen: (
+    desktop-size: 1280px,
+    laptop-size: 991px,
+    mobile-size: 375px,
+    tablet-size: 768px,
+);
+
+@function getScreenSize($device) {
+  @return map-get($screen, $device);
+}
+
+/* 
+@media (max-width: getScreenSize(mobile-size)) {
+    ... 
+}
+*/
