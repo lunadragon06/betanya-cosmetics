@@ -10,42 +10,88 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   </head>
   <body>
+    <!-- NAV -->
     <nav class="menu-container"></nav>
-    
+    <!-- 
+      Make footer stay at the bottom of the page 
+      ~ Code starts here 
+    -->
     <div class="wrapper" id="form-page">
+    <!-- Heading -->
     <h1>Edit product</h1>
-
-    <span class="loading">Loading ...</span>
-
+    <!-- 
+      Loading indicator
+    -->
+    <section class="loader">
+      <p class="loader__text">
+        Loading product ...
+      </p>
+      <span class="loader__object">
+        <div></div>
+      </span>
+    </section>
+    <!-- MAIN CONTENT ~ Edit or delete spesific product -->
     <form class="edit-form">
-      <div class="message-container"></div>
-
+    <!-- Display error/success message(s) -->
+    <div class="message-container"></div>
+      <!-- 
+        INPUT FIELD 
+        basics
+      -->
       <input class="formfield" id="id" />
-
-          <input class="formfield" id="title" />
-
-          <input class="formfield" id="brand" />
-
-          <input id="year" style="width: 90%;" /><b style="margin-left: .5rem;"> $</b>
-
-        <input id="month" class="formfield" />
-
+      <input class="formfield" id="name" />
+      <input class="formfield" id="brand" />
+      <input id="price" style="width: 90%;" /><b style="margin-left: .5rem;"> $</b>
+      <input id="quantity" class="formfield" />
+      <!-- Select input field -->
       <select class="formfield" id="category">
-        <option value="">Choose category</option>
-        <option value="blush">Blush</option>
-        <option value="lipstick">Lipstick</option>
-        <option value="mascara">Mascara</option>
-        <option value="powder">Powder</option>
+        <option value="">Category</option>
+        <!-- 
+          Exsisting option values from API 
+        -->
+        <option value="blush">
+          Blush
+        </option>
+        <option value="browpencil">
+          Browpencil
+        </option>
+        <option value="brush">
+          Brush
+        </option>
+        <option value="eyeliner">
+          Eyeliner
+        </option>
+        <option value="foundation">
+          Foundation
+        </option>
+        <option value="lipstick">
+          Lipstick
+        </option>
+        <option value="mascara">
+          Mascara
+        </option>
+        <option value="nailpolish">
+          Nailpolish
+        </option>
+        <option value="powder">
+          Powder
+        </option>
+        <option value="primer">
+          Primer
+        </option>
       </select>
-
-        <input class="formfield" id="image" disabled>
-
-          <textarea class="formfield" id="description"></textarea>
-
+      <!-- File field -->
+      <input class="formfield" id="image" disabled>
+      <!-- Long-text area field -->
+      <textarea class="formfield" id="description"></textarea>
+      <!-- Button groups -->
       <button class="formbtn" id="update">Update</button>
-        <div class="delete-container"></div>
+      <div class="delete-container"></div>
     </form>
-    
+    <!-- 
+      Make footer stay at the bottom of the page 
+      ~ Code ends here 
+    -->
     </div>
     <footer class="footer">
       <span class="footer__copyright">
