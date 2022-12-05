@@ -63,6 +63,10 @@ textarea {
     width: 10px;
 }
 
+.checkpassword__pointer {
+    font-size: 12px !important;
+}
+
 /*  
     ADD PRODUCT FORM 
 */
@@ -70,7 +74,11 @@ textarea {
     padding: 2rem 1.5rem;
 }
 
-.upload-txt {
+.upload i {
+    color: #646464;
+}
+
+.upload__instrucs {
     font-size: 13px;
     margin-left: .5rem;
 }
