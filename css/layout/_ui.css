@@ -66,3 +66,11 @@ textarea {
 /*  
     ADD PRODUCT FORM 
 */
+.upload {
+    padding: 2rem 1.5rem;
+}
+
+.upload-txt {
+    font-size: 13px;
+    margin-left: .5rem;
+}
