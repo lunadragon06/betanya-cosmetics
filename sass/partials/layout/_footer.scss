@@ -1,0 +1,31 @@
+footer {
+    background: #DC2A6B;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    font-size: 14px;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.footer__media {
+    display: flex;
+    gap: 15px;
+}
+
+.wrapper {
+    flex: 1 0 auto;
+}
+
+@media (max-width: 375px) {
+    footer {
+        flex-direction: column;
+        gap: 25px;
+        padding: 2rem 2rem 3rem;
+        text-align: center;
+    }
+    .footer__media {
+        justify-content: center;
+    }
+}
