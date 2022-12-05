@@ -11,25 +11,9 @@
 /* Import Google Font(s) */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
-.message.success {
-    background: #e4ffe2;
-    border: 1px solid #98e594;
-    color: #043c31;
-    padding: 1rem;
-}
-
 button {
     border-radius: 4px;
     font-family: 'Noto Sans', sans-serif;
-}
-
-.upload {
-    padding: 2rem 1.5rem;
-}
-
-.upload-txt {
-    font-size: 13px;
-    margin-left: .5rem;
 }
 
 .formbtn, .delete {
@@ -51,12 +35,4 @@ form-btn:active,
 .formbtn:focus, 
 .formbtn:hover {
     background: #F23D91;
-}
-
-.message.warning {
-    background: #ffe5ef;
-    border: 1px solid #F23D91;
-    color: #ce1e50;
-    margin-bottom: 2rem;
-    padding: 1rem;
 }
