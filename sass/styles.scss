@@ -1,4 +1,14 @@
-@import "partials/layout/footer";
+@import "partials/messages";
 @import "partials/variables";
+@import "partials/ui";
 
-/* import fonts here? */
+/* LAYOUT */
+@import "partials/layout/buttons";
+@import "partials/layout/footer";
+@import "partials/layout/header";
+@import "partials/layout/loader";
+@import "partials/layout/nav";
+@import "partials/layout/products";
+
+/* Font import(s) */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
