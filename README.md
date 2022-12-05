@@ -35,7 +35,10 @@ If ``Go Live`` doesn't exsist, ``Live Server`` should be installed and then rest
 ## 🔗 Contributing
 To contribute to this project, please create a new branch that can be reviewed and merged.
 ## 🏅 License
-This is a redesign and attempted improved version of my semester project repo from my other GitHub account, which I didn't manage to finish for Portfolio 2 submission on time in this case. 
+This is a redesign and attempted improved version of [this semester project repo](https://github.com/LunaDragon666/sp-2/) of mine from my other GitHub account(where the used API link doesn't exsist anymore), which I didn't manage to finish for Portfolio 2 submission on time in this case.
 ## 🤙 Contact me
 [LinkedIn](https://www.linkedin.com/in/monika-lie/)
-<br><br>
+<br>
+[Student email](mailto:monlie16236@stud.noroff.no) 
+<br>
+<br>
