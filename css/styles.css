@@ -8,6 +8,7 @@
 @import "layout/_variables.css";
 @import "layout/_ui.css";
 
+/* Import Google Font(s) */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 .message.success {
@@ -17,22 +18,9 @@
     padding: 1rem;
 }
 
-/* Form design ~ login */
-::-webkit-input-placeholder, select, .upload-txt {
-    color: #646464;
-}
-
-input, select, textarea, button, .upload {
+button {
     border-radius: 4px;
     font-family: 'Noto Sans', sans-serif;
-}
-
-input, select, textarea, .upload {
-    background: #f9f7f7;
-    padding: 1rem 1rem;
-    margin: 1rem 0;
-    display: inline-block;
-    border: 1px solid #ccc;
 }
 
 .upload {
