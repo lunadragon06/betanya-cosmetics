@@ -1,0 +1,18 @@
+.message {
+    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+/* success */
+.message.success {
+    background: #e4ffe2;
+    border: 1px solid #98e594;
+    color: #043c31;
+}
+
+/* error and/or warning */
+.message.warning {
+    background: #ffe5ef;
+    border: 1px solid #F23D91;
+    color: #ce1e50;
+}
