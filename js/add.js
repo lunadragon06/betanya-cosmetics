@@ -4,7 +4,6 @@ import { getToken } from "./utils/storage.js";
 import { baseUrl } from "./settings/api.js";
 
 const token = getToken();
-
 if (!token) {
     location.href = "/login.html";
 }
