@@ -12,12 +12,9 @@ const username = document.querySelector("#username");
 createMenu();
 
 form.addEventListener("submit", submitForm);
-
 function submitForm(event) {
     event.preventDefault();
-    
     message.innerHTML = "";
-
     const usernameValue = username.value.trim();
     const passwordValue = password.value.trim();
 
@@ -58,7 +55,6 @@ async function doLogin(username, password) {
     }
 }
 
-// Show typed in password on input-click
 showPassword.addEventListener('click', function () {
     if (password.type === "password") {
         password.type = "text";
