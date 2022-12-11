@@ -1,6 +1,5 @@
 const tokenKey = "token";
 const userKey = "user";
-
 export function saveToken(token) {
     saveToStorage(tokenKey, token);
 }
@@ -25,7 +24,6 @@ function saveToStorage(key, value) {
 }
 function getFromStorage(key) {
     const value = localStorage.getItem(key);
-
     if (!value) {
         return null;
     }
