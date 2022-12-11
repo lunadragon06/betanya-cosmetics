@@ -1,8 +1,12 @@
 $--animation: .5s;
 $--content-corner: 4px;
+$--default-layout: flex;
 $--full-width: 100%;
 $--primary-font: 'Noto Sans', sans-serif;
+$--site-display: center;
+$--unfiltered: none;
 $--unset: 0;
+$--white-space: 1rem;
 
 $screen: (
   desktop-size: 1280px,
@@ -45,7 +49,7 @@ body, html {
 
 body {
   background: get(background-color);
-  display: flex;
+  display: $--default-layout;
   flex-direction: column;
   height: 100vh;
   margin: $--unset;
@@ -54,7 +58,7 @@ body {
 
 h1 {
   font-size: 28px;
-  text-align: center;
+  text-align: $--site-display;
 }
 
 h2 {
