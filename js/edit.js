@@ -18,7 +18,6 @@ const id = params.get("id");
 if (!id) {
     document.location.href = "/";
 }
-
 const productUrl = baseUrl + "products/" + id;
 const form = document.querySelector("form");
 const name = document.querySelector("#name");
@@ -36,7 +35,6 @@ const loading = document.querySelector(".loader");
     try {
         const response = await fetch(productUrl);
         const details = await response.json();
-
         name.value = details.name;
         brand.value = details.brand;
         price.value = details.price;
@@ -47,8 +45,6 @@ const loading = document.querySelector(".loader");
         idInput.value = details.id;
 
         deleteButton(details.id);
-        console.log(details);
-
     } catch (error) {
         console.log(error);
     } finally {
@@ -80,7 +76,6 @@ async function updateProduct(name, brand, price, quantity, category, description
     const url = baseUrl + "products/" + id;
     const data = JSON.stringify({ name: name, brand: brand, price: price, quantity: quantity, category: category, description: description });
     const token = getToken();
-
     const options = {
         method: "PUT",
         body: data,
@@ -89,7 +84,6 @@ async function updateProduct(name, brand, price, quantity, category, description
             Authorization: `Bearer ${token}`,
         },
     };
-
     try {
         const response = await fetch(url, options);
         const json = await response.json();
@@ -98,7 +92,6 @@ async function updateProduct(name, brand, price, quantity, category, description
         if (json.updated_at) {
             displayMessage("success", "The product has been successfully updated.", ".message-container");
         }
-
         if (json.error) {
             displayMessage("error", json.message, ".message-container");
         }
