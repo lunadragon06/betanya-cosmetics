@@ -24,7 +24,7 @@ createMenu();
                 <div class="productitem__content">
                 <img class="productitem__view" src="${product.image.url}" alt="${product.category}">
                     <span class="productitem__details">
-                        <h2> ${product.name}</h2>
+                    <h2>${product.name}</h2>
                 <div>
                 <p><b>Brand name: </b>${product.brand}</p>
                 <p style="text-transform: capitalize;">
@@ -35,9 +35,7 @@ createMenu();
                 </div>
                     <div class="productitem__setting">
                     <p class="productitem__setting-tag" style="text-align: right;"><b>$</b> ${product.price}</p>
-                    <a class="productitem__setting-link" href="edit.html?id=${product.id}">
-                        <i class="fas fa-edit"></i>
-                    </a>
+                    <a class="productitem__setting-link" href="edit.html?id=${product.id}"><i class="fas fa-edit"></i></a>
                 </div>
             </article>
         `;
