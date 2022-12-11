@@ -1,9 +1,9 @@
 footer {
-    background: #DC2A6B;
-    color: white;
+    background: get(primary-color);
+    color: get(asset-color);
     display: flex;
     flex-direction: row;
-    flex-shrink: 0;
+    flex-shrink: $--unset;
     font-size: 14px;
     justify-content: space-between;
     padding: 1rem;
@@ -18,7 +18,7 @@ footer {
     flex: 1 0 auto;
 }
 
-@media (max-width: 375px) {
+@media (max-width: getScreenSize(mobile-size)) {
     footer {
         flex-direction: column;
         gap: 25px;
