@@ -221,7 +221,7 @@ footer {
   flex: 1 0 auto;
 }
 @media (max-width: 375px) {
-  footer {
+  .footer {
     flex-direction: column;
     gap: 25px;
     padding: 2rem 2rem 3rem;
