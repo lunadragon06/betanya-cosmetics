@@ -10,33 +10,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   </head>
   <body>
-    <!-- NAV -->
     <nav class="menu"></nav>
-    <!-- 
-      Make footer stay at the bottom of the page 
-      ~ Code starts here 
-    -->
     <div class="wrapper" id="form-page">
-    <!-- Heading -->
     <h1>Add product</h1>
-    <!-- MAIN CONTENT ~ Add new product form page -->
     <form class="add-form">
-    <!-- Display error/success message(s) -->
     <div class="message-container"></div>
-      <!-- 
-        INPUT FIELD 
-        basics
-      -->
       <input class="formfield" id="name" placeholder="Name" />
       <input class="formfield" id="brand" placeholder="Brand" />
       <input class="formfield" id="price" placeholder="Price" />
       <input class="formfield" id="quantity" placeholder="Quantity number" value="1" />
-      <!-- Select input field -->
       <select class="formfield" id="category">
         <option value="">Category</option>
-        <!-- 
-          Exsisting option values from API 
-        -->
         <option value="blush">
           Blush
         </option>
@@ -68,21 +52,14 @@
           Primer
         </option>
       </select>
-      <!-- File upload field -->
       <input type="file" name="uploadfile" id="img" style="display: none;" disabled />
       <label for="img" class="upload">
           <i class="fas fa-upload"></i>
           <span class="upload__instrucs"> Image upload (currently disabled)</span>
       </label>
-      <!-- Long-text area field -->
       <textarea class="formfield" id="description" placeholder="Description"></textarea>
-      <!-- Default form button -->
       <button class="formbtn" id="update">Add new product</button>
     </form>
-    <!-- 
-      Make footer stay at the bottom of the page 
-      ~ Code ends here 
-    -->
     </div>
     <footer class="footer">
       <span class="footer__copyright">
