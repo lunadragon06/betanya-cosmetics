@@ -1,8 +1,8 @@
 .menu {
-    align-items: center;
+    align-items: $--site-display;
     background: get(primary-color);
     box-shadow: rgb(0 0 0 / 10%) 0px 15px 30px;
-    display: flex;
+    display: $--default-layout;
     height: 70px;
     justify-content: space-between;
     padding: 2.5rem 0;
@@ -15,27 +15,27 @@
     font-family: $--primary-font;
     font-size: 20px;
     margin-left: 25px;
-    text-decoration: none;
+    text-decoration: $--unfiltered;
 }
 
 /* 
     HAMBURGER MENU TOGGLE
 */
 input[type="checkbox"] {
-    display: none;
+    display: $--unfiltered;
 }
 
 .menu__toggler {
-    align-items: center;
+    align-items: $--site-display;
     color: get(asset-color);
     font-size: 20px;
     font-weight: bold;
     height: 35px;
-    justify-content: center;
+    justify-content: $--site-display;
     width: 100px;
     /* are included so mobile menu works */
-    display: flex;
-    display: none;
+    display: $--default-layout;
+    display: $--unfiltered;
 }
 
 /* Navigation bar menu */
@@ -53,7 +53,7 @@ input[type="checkbox"] {
 .menu__item 
 a {
     color: get(asset-color);
-    text-decoration: none;
+    text-decoration: $--unfiltered;
 }
 
 /* 
@@ -68,7 +68,7 @@ a {
 
 @media (max-width: getScreenSize(tablet-size)) {
     .menu__toggler {
-        display: flex;
+        display: $--default-layout;
     }
     #toggle:checked ~ .menu__links {
         left: $--unset;
@@ -80,7 +80,7 @@ a {
         height: 19.25rem;
         padding: 1rem 0 3rem;
         position: absolute;
-        text-align: center;
+        text-align: $--site-display;
         top: 80px;
         transition: 0.8s ease-in-out;
         width: 100%;
