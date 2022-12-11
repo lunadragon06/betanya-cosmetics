@@ -5,10 +5,8 @@ export default function deleteButton(id) {
     const container = document.querySelector(".delete-container");
     container.innerHTML = `<button type="button" class="delete" id="delete">Delete</button>`;
     const button = document.querySelector("button.delete");
-
     button.onclick = async function () {
         const doDelete = confirm("Are you sure you want to delete this?");
-
         if (doDelete) {
             const url = baseUrl + "products/" + id;
             const token = getToken();
