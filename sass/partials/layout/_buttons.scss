@@ -17,13 +17,15 @@ button {
     padding: 1rem 1.25rem;
     text-decoration: $--unfiltered;
     transition: $--animation;
+
+    &:hover {
+        background: get(link-color);
+    }
 }
 
-.header__ctabtn:hover {
-    background: get(link-color);
-}
-
-/* Cart button */
+/* 
+    Cart button
+ */
 .product__cartbtn {
     background: get(cta-color);
     border: $--unfiltered;
@@ -33,15 +35,14 @@ button {
     text-transform: uppercase;
     transition: $--animation;
     width: $--full-width;
-}
 
-.product__cartbtn i {
-    color: get(asset-color);
-    transition: $--animation;
-}
-
-.product__cartbtn:hover {
-    background: get(main-button-hover);
+    & i {
+        color: get(asset-color);
+        transition: $--animation;
+    }
+    &:hover {
+        background: get(main-button-hover); 
+    }
 }
 
 .product__cartbtn:active,
@@ -61,20 +62,25 @@ button {
     padding: $--white-space;
     text-decoration: $--unfiltered;
     transition: $--animation;
+
+    &:hover {
+        background: get(main-button-hover); 
+    }
 }
 
-.display__addbtn:hover, 
-.productitem__setting-link:hover {
-    background: get(main-button-hover);
-}
-
-/* Edit single product */
+/* 
+    Edit single product ~ CTA-button  
+*/
 .productitem__setting-link {
     background: get(cta-color);
     border-radius: $--content-corner;
     padding: .75rem 3.25rem;
     text-align: $--site-display;
     transition: $--animation;
+
+    &:hover {
+        background: get(main-button-hover); 
+    }
 }
 
 /* 
@@ -109,15 +115,17 @@ button {
     background: get(main-button-hover);
 }
 
-/* Update product button */
+/*    
+    Update product button 
+*/
 #update {
     background: #097f67;
     color: get(asset-color);
     margin-top: 1.5rem;
-}
 
-#update:hover {
-    background: #056074;
+    &:hover {
+        background: #056074;
+    }
 }
 
 /* Logout button */
