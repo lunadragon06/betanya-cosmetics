@@ -18,16 +18,10 @@
   color: #ce1e50;
 }
 
-/* $--asset-color */
-/* 
-@media (max-width: getScreenSize(mobile-size)) {
-    ... 
-}
-*/
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body, html {
@@ -40,9 +34,9 @@ body {
   background: #fbfbfb;
   display: flex;
   flex-direction: column;
+  height: 100vh;
   margin: 0;
   width: 100%;
-  height: 100vh;
 }
 
 h1 {
@@ -56,7 +50,7 @@ h2 {
 }
 
 i {
-  color: white;
+  color: #ffffff;
   font-size: 20px;
 }
 
@@ -161,9 +155,9 @@ button {
     CTA-button 
 */
 .header__ctabtn {
-  background: #0E6500;
+  background: #0e6500;
   border-radius: 4px;
-  color: white;
+  color: #ffffff;
   display: inline-block;
   letter-spacing: 0.1rem;
   margin-top: 3rem;
@@ -178,37 +172,37 @@ button {
 
 /* Cart button */
 .product__cartbtn {
-  background: #E21675;
+  background: #e21675;
   border: none;
+  border-radius: 0 0 4px 4px;
   cursor: pointer;
   padding: 1rem;
   text-transform: uppercase;
   transition: 0.5s;
   width: 100%;
-  border-radius: 0 0 4px 4px;
 }
 
 .product__cartbtn i {
-  color: white;
+  color: #ffffff;
   transition: 0.5s;
 }
 
 .product__cartbtn:hover {
-  background: #D90D32;
+  background: #d90d32;
 }
 
 .product__cartbtn:active,
 .product__cartbtn:focus {
-  background: #0E6500;
+  background: #0e6500;
 }
 
 /* 
     ADMIN SECTIONS
 */
 .display__addbtn {
-  background: #E21675;
+  background: #e21675;
   border-radius: 4px;
-  color: white;
+  color: #ffffff;
   display: inline-block;
   margin: 2rem 0 3rem;
   padding: 1rem;
@@ -218,12 +212,12 @@ button {
 
 .display__addbtn:hover,
 .productitem__setting-link:hover {
-  background: #D90D32;
+  background: #d90d32;
 }
 
 /* Edit single product */
 .productitem__setting-link {
-  background: #E21675;
+  background: #e21675;
   border-radius: 4px;
   padding: 0.75rem 3.25rem;
   text-align: center;
@@ -239,7 +233,7 @@ button {
 
 .delete,
 .formbtn {
-  background: #E21675;
+  background: #e21675;
   border: none;
   color: #ffffff;
   cursor: pointer;
@@ -259,13 +253,13 @@ button {
 .formbtn:focus,
 .delete:hover,
 .formbtn:hover {
-  background: #D90D32;
+  background: #d90d32;
 }
 
 /* Update product button */
 #update {
   background: #097f67;
-  color: white;
+  color: #ffffff;
   margin-top: 1.5rem;
 }
 
@@ -291,8 +285,8 @@ button {
   }
 }
 footer {
-  background: #DC2A6B;
-  color: white;
+  background: #dc2a6b;
+  color: #ffffff;
   display: flex;
   flex-direction: row;
   flex-shrink: 0;
@@ -337,7 +331,7 @@ footer {
 }
 
 .header__heading {
-  color: #E60970;
+  color: #e21675;
   font-size: 36px;
   text-align: left;
 }
@@ -394,7 +388,7 @@ Loader sculpting
 .loader__object div {
   -webkit-animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
           animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
-  background: #E21675;
+  background: #e21675;
   height: 32px;
   left: 32px;
   position: absolute;
@@ -404,7 +398,7 @@ Loader sculpting
 
 .loader__object div:after,
 .loader__object div:before {
-  background: #E21675;
+  background: #e21675;
   content: " ";
   display: block;
   height: 32px;
@@ -467,7 +461,7 @@ Loader sculpting
 }
 .menu {
   align-items: center;
-  background: #DC2A6B;
+  background: #dc2a6b;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 15px 30px;
   display: flex;
   height: 70px;
@@ -536,7 +530,7 @@ input[type=checkbox] {
     left: 0;
   }
   .menu .menu__links {
-    background: #F6CED6;
+    background: #f6ced6;
     left: -100%;
     height: 19.25rem;
     padding: 1rem 0 3rem;
@@ -568,12 +562,12 @@ input[type=checkbox] {
   from homepage 
 */
 .product {
-  flex: 1 0 200px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px;
+  flex: 1 0 200px;
 }
 
 .product__card {
-  background: white;
+  background: #ffffff;
   line-height: 50px;
   margin-top: -0.35rem;
   padding: 1.5rem 1rem 2rem;
@@ -608,14 +602,14 @@ input[type=checkbox] {
 
 /* Single product card */
 .productitem {
-  background: white;
-  border-radius: 5px;
-  margin: 2rem 0;
-  padding: 1rem 1rem;
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px 0px;
+  margin: 2rem 0;
+  padding: 1rem 1rem;
 }
 
 .productitem__content {
