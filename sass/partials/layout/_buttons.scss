@@ -15,7 +15,7 @@ button {
     letter-spacing: .1rem;
     margin-top: 3rem;
     padding: 1rem 1.25rem;
-    text-decoration: none;
+    text-decoration: $--unfiltered;
     transition: $--animation;
 }
 
@@ -26,10 +26,10 @@ button {
 /* Cart button */
 .product__cartbtn {
     background: get(cta-color);
-    border: none;
+    border: $--unfiltered;
     border-radius: 0 0 4px 4px;
     cursor: pointer;
-    padding: 1rem;
+    padding: $--white-space;
     text-transform: uppercase;
     transition: $--animation;
     width: $--full-width;
@@ -58,8 +58,8 @@ button {
     color: get(asset-color);
     display: inline-block;
     margin: 2rem 0 3rem;
-    padding: 1rem;
-    text-decoration: none;
+    padding: $--white-space;
+    text-decoration: $--unfiltered;
     transition: $--animation;
 }
 
@@ -73,7 +73,7 @@ button {
     background: get(cta-color);
     border-radius: $--content-corner;
     padding: .75rem 3.25rem;
-    text-align: center;
+    text-align: $--site-display;
     transition: $--animation;
 }
 
@@ -81,13 +81,13 @@ button {
     FORM BUTTONS 
 */
 #delete {
-    margin-top: 1rem;
+    margin-top: $--white-space;
 }
 
 .delete, 
 .formbtn {
     background: get(cta-color);
-    border: none;
+    border: $--unfiltered;
     color: get(asset-color);
     cursor: pointer;
     font-size: 16px;
@@ -124,7 +124,7 @@ button {
 #logout {
     font-size: 20px;
     background: transparent;
-    border: none;
+    border: $--unfiltered;
     cursor: pointer;
 }
 
