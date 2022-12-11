@@ -14,10 +14,6 @@ footer {
     gap: 15px;
 }
 
-.wrapper {
-    flex: 1 0 auto;
-}
-
 @media (max-width: getScreenSize(mobile-size)) {
     footer {
         flex-direction: column;
