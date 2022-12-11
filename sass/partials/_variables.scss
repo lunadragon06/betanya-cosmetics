@@ -1,28 +1,27 @@
+$--animation: .5s;
+$--content-corner: 4px;
+$--full-width: 100%;
 $--primary-font: 'Noto Sans', sans-serif;
-/* $--primary-font */
+$--unset: 0;
 
 $screen: (
-    desktop-size: 1280px,
-    laptop-size: 991px,
-    mobile-size: 375px,
-    tablet-size: 768px,
+  desktop-size: 1280px,
+  laptop-size: 991px,
+  mobile-size: 375px,
+  tablet-size: 768px,
 );
 
 @function getScreenSize($device) {
   @return map-get($screen, $device);
 }
 
-/* 
-@media (max-width: getScreenSize(mobile-size)) {
-    ... 
-}
-*/
-
 $colors: (
   asset-color: #ffffff,
+  background-color: #fbfbfb,
   cta-color: #e21675,
   link-color: #508200,
-  main-button-hover: #D90D32,
+  main-button-hover: #d90d32,
+  mobile-menu-color: #f6ced6,
   primary-color: #dc2a6b,
   secondary-color: #0e6500,
   tertiary-color: #071d03,
@@ -33,24 +32,24 @@ $colors: (
 }
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
+  margin: $--unset;
+  padding: $--unset;
 }
 
 body, html {
-  color: #071d03;
-  font-family: 'Noto Sans', sans-serif;
-  height: 100%;
+  color: get(tertiary-color);
+  font-family: $--primary-font;
+  height: $--full-width;
 }
 
 body {
-  background: #fbfbfb;
+  background: get(background-color);
   display: flex;
   flex-direction: column;
-  margin: 0;
-  width: 100%;
   height: 100vh;
+  margin: $--unset;
+  width: $--full-width;
 }
 
 h1 {
@@ -64,11 +63,11 @@ h2 {
 }
 
 i {
-  color: white;
+  color: get(asset-color);
   font-size: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: getScreenSize(tablet-size)) {
   h1 {
       text-align: left;
   }
