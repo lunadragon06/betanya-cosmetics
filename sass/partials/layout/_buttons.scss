@@ -1,6 +1,6 @@
 button {
-    border-radius: 4px;
-    font-family: 'Noto Sans', sans-serif;
+    border-radius: $--content-corner;
+    font-family: $--primary-font;
 }
 
 /* 
@@ -8,73 +8,73 @@ button {
     CTA-button 
 */
 .header__ctabtn {
-    background: #0E6500;
-    border-radius: 4px;
-    color: white;
+    background: get(secondary-color);
+    border-radius: $--content-corner;
+    color: get(asset-color);
     display: inline-block;
     letter-spacing: .1rem;
     margin-top: 3rem;
     padding: 1rem 1.25rem;
     text-decoration: none;
-    transition: .5s;
+    transition: $--animation;
 }
 
 .header__ctabtn:hover {
-    background: #508200;
+    background: get(link-color);
 }
 
 /* Cart button */
 .product__cartbtn {
-    background: #E21675;
+    background: get(cta-color);
     border: none;
+    border-radius: 0 0 4px 4px;
     cursor: pointer;
     padding: 1rem;
     text-transform: uppercase;
-    transition: .5s;
-    width: 100%;
-    border-radius: 0 0 4px 4px;
+    transition: $--animation;
+    width: $--full-width;
 }
 
 .product__cartbtn i {
-    color: white;
-    transition: .5s;
+    color: get(asset-color);
+    transition: $--animation;
 }
 
 .product__cartbtn:hover {
-    background: #D90D32;
+    background: get(main-button-hover);
 }
 
 .product__cartbtn:active,
 .product__cartbtn:focus {
-    background: #0E6500;
+    background: get(secondary-color);
 }
 
 /* 
     ADMIN SECTIONS
 */
 .display__addbtn {
-    background: #E21675;
-    border-radius: 4px;
-    color: white;
+    background: get(cta-color);
+    border-radius: $--content-corner;
+    color: get(asset-color);
     display: inline-block;
     margin: 2rem 0 3rem;
     padding: 1rem;
     text-decoration: none;
-    transition: .5s;
+    transition: $--animation;
 }
 
 .display__addbtn:hover, 
 .productitem__setting-link:hover {
-    background: #D90D32;
+    background: get(main-button-hover);
 }
 
 /* Edit single product */
 .productitem__setting-link {
-    background: #E21675;
-    border-radius: 4px;
+    background: get(cta-color);
+    border-radius: $--content-corner;
     padding: .75rem 3.25rem;
     text-align: center;
-    transition: .5s;
+    transition: $--animation;
 }
 
 /* 
@@ -86,9 +86,9 @@ button {
 
 .delete, 
 .formbtn {
-    background: #E21675;
+    background: get(cta-color);
     border: none;
-    color: #ffffff;
+    color: get(asset-color);
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
@@ -96,8 +96,8 @@ button {
     margin: 3rem 0 0;
     padding: 1.5rem;
     text-transform: uppercase;
-    transition: .5s;
-    width: 100%;
+    transition: $--animation;
+    width: $--full-width;
 }
 
 .delete:active,
@@ -106,13 +106,13 @@ button {
 .formbtn:focus, 
 .delete:hover, 
 .formbtn:hover {
-    background: #D90D32;
+    background: get(main-button-hover);
 }
 
 /* Update product button */
 #update {
     background: #097f67;
-    color: white;
+    color: get(asset-color);
     margin-top: 1.5rem;
 }
 
@@ -132,7 +132,7 @@ button {
     font-size: 24px;
 }
 
-@media (max-width: 768px)  {
+@media (max-width: getScreenSize(tablet-size)) {
     .display__addbtn {
         margin: 2rem 0 1rem;
     }
