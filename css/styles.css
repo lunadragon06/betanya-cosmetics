@@ -292,7 +292,6 @@ footer {
   transform-origin: 40px 40px;
   width: 80px;
 }
-
 .loader__object div {
   -webkit-animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
   animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -552,4 +551,5 @@ input[type=checkbox] {
   border: 1px solid #F23D91;
   color: #ce1e50;
 }
+
 /* Font import(s) *//*# sourceMappingURL=styles.css.map */
