@@ -6,7 +6,6 @@ const displayProducts = document.querySelector(".products");
 
 createMenu();
 
-// API call ~ Homepage
 async function getProducts(){
   const response = await fetch(api);
   const results = await response.json();
@@ -37,7 +36,6 @@ async function getProducts(){
 getProducts();
 
 
-// Header API call  
 async function header() {
   const heroBanner = document.querySelector("header");
   const url = baseUrl + "header";
