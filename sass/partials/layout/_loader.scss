@@ -1,75 +1,75 @@
 .loader {
-    text-align: center;
+  text-align: center;
 }
 
 .loader__text {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 5rem 0 1rem;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5rem 0 1rem;
 }
 
 .loader__object {
-    display: inline-block;
-    height: 80px;
-    position: relative;
-    transform: rotate(45deg);
-    transform-origin: 40px 40px;
-    width: 80px;
+  display: inline-block;
+  height: 80px;
+  position: relative;
+  transform: rotate(45deg);
+  transform-origin: 40px 40px;
+  width: 80px;
 }
 
 /* 
 Loader sculpting
 */
 .loader__object div {
-    animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
-    background: #E21675;
-    height: 32px;
-    left: 32px;
-    position: absolute;
-    top: 32px;
-    width: 32px;
+  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  background: get(cta-color);
+  height: 32px;
+  left: 32px;
+  position: absolute;
+  top: 32px;
+  width: 32px;
 }
 
 .loader__object div:after,
 .loader__object div:before {
-    background: #E21675;
-    content: " ";
-    display: block;
-    height: 32px;
-    position: absolute;
-    width: 32px;
+  background: get(cta-color);
+  content: " ";
+  display: block;
+  height: 32px;
+  position: absolute;
+  width: 32px;
 }
 
 .loader__object div:before {
-    border-radius: 50% 0 0 50%;
-    left: -24px;
+  border-radius: 50% 0 0 50%;
+  left: -24px;
 }
 
 .loader__object div:after {
-    border-radius: 50% 50% 0 0;
-    top: -24px;
+  border-radius: 50% 50% 0 0;
+  top: -24px;
 }
 
 /* 
     Loader animation movement 
 */
 @keyframes lds-heart {
-    0% {
-      transform: scale(0.95);
-    }
-    5% {
-      transform: scale(1.1);
-    }
-    39% {
-      transform: scale(0.85);
-    }
-    45% {
-      transform: scale(1);
-    }
-    60% {
-      transform: scale(0.95);
-    }
-    100% {
-      transform: scale(0.9);
-    }
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
 }
