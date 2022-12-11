@@ -5,7 +5,7 @@
 **Betanya Cosmetics (BC)** is a micro ecommerce website with a vision to display vegan makeup products for people who want to buy and use pure, cruelty-free cosmetics. The goal of this assignment was to use everything I learned and could so far in vanilla JavaScript from the 3rd semester (2nd year) of the Frontend Development study program at Noroff Vocatinal School. Due to covid which I got at the same time as this exam took place, where I also struggled with long COVID during and after this semester project, is therefore presented deficient. Errors on page from admin side will be attempted to be fixed again and other functionalities will be added to this site when time permits me to do these.
 <br><br>
 Live site to this project is currently unavailable as this project will still be ongoing after Portfolio marking, and will be used as practice project.
-### Users can 👤
+### In this project we can 🔍
 - [x] Find vegan makeup products from homepage 
 ### While admin can ⚙️
 - [x] Add new makeup product
@@ -14,7 +14,7 @@ Live site to this project is currently unavailable as this project will still be
 + delete a single product from both site and API 
 - [ ] New functionalities and improvements for admin and especially users will most likely be added 
 #### Login info 🔐
-The login information is exactly the same as for Project Exam 2 (Torf's Gallery of Art) which has been provided from my other GitHub repo (taken from my other account) [here](https://github.com/lunadragon06/torfs-art-gallery). Same base API url was used, since I currently don't have energy nor capacity to make new publicly hosted.  
+The login information is exactly the same as for Project Exam 2 (Torf's Gallery of Art) which has been provided from my other GitHub repo [here](https://github.com/lunadragon06/torfs-art-gallery/tree/master). Same base API url was used, since I currently don't have energy nor capacity to make new publicly hosted.  
 ## 🔧 Built With
 I used these following tech stack to build this project:
 - [Cloudinary](https://www.cloudinary.com/)
