@@ -36,7 +36,9 @@ $colors: (
   @return map-get($colors, $color);
 }
 
-/* Base SCSS code */
+/* 
+  Base SCSS code 
+*/
 * {
   box-sizing: border-box;
   margin: $--unset;
@@ -73,7 +75,9 @@ i {
   font-size: 20px;
 }
 
-/* It's purpose is to keep the footer down */
+/* 
+  It's purpose is to keep the footer down 
+*/
 .wrapper {
   flex: 1 0 auto;
 }
