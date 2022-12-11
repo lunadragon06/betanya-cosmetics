@@ -22,13 +22,14 @@ footer {
 }
 
 @media (max-width: getScreenSize(mobile-size)) {
-    footer {
+    .footer {
         flex-direction: column;
         gap: 25px;
         padding: 2rem 2rem 3rem;
         text-align: $--site-display;
-    }
-    .footer__media {
-        justify-content: $--site-display;
+
+        &__media {
+            justify-content: $--site-display;
+        }
     }
 }
