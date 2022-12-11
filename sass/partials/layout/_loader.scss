@@ -1,35 +1,44 @@
 .loader {
   text-align: $--site-display;
-}
 
-.loader__text {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 5rem 0 1rem;
-}
-
-.loader__object {
-  display: inline-block;
-  height: 80px;
-  position: relative;
-  transform: rotate(45deg);
-  transform-origin: 40px 40px;
-  width: 80px;
+  &__text {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5rem 0 1rem;
+  }
+  &__object {
+    display: inline-block;
+    height: 80px;
+    position: relative;
+    transform: rotate(45deg);
+    transform-origin: 40px 40px;
+    width: 80px;
+    /* 
+      Loader sculpting
+    */
+    & div {
+      animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+      background: get(cta-color);
+      height: 32px;
+      left: 32px;
+      position: absolute;
+      top: 32px;
+      width: 32px;
+      &:after {
+        border-radius: 50% 50% 0 0;
+        top: -24px;
+      }
+      &:before {
+        border-radius: 50% 0 0 50%;
+        left: -24px;
+      }
+    }
+  }
 }
 
 /* 
-Loader sculpting
+Loader timing
 */
-.loader__object div {
-  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
-  background: get(cta-color);
-  height: 32px;
-  left: 32px;
-  position: absolute;
-  top: 32px;
-  width: 32px;
-}
-
 .loader__object div:after,
 .loader__object div:before {
   background: get(cta-color);
@@ -38,16 +47,6 @@ Loader sculpting
   height: 32px;
   position: absolute;
   width: 32px;
-}
-
-.loader__object div:before {
-  border-radius: 50% 0 0 50%;
-  left: -24px;
-}
-
-.loader__object div:after {
-  border-radius: 50% 50% 0 0;
-  top: -24px;
 }
 
 /* 
