@@ -2,43 +2,46 @@
     background-size: cover !important;
     min-height: 480px;
     position: relative;
-}
 
-.header__content {
-    left: 25%;
-    min-width: 200px;
-    padding: 2rem;
-    position: absolute;
-    top: 75px;
-    transform: translateX(-50%);
-}
-
-.header__heading {
-    color: get(cta-color);
-    font-size: 36px;
-    text-align: left;
+    &__content {
+        left: 25%;
+        min-width: 200px;
+        padding: 2rem;
+        position: absolute;
+        top: 75px;
+        transform: translateX(-50%);
+    }
+    &__heading {
+        color: get(cta-color);
+        font-size: 36px;
+        text-align: left;
+    }
 }
 
 @media (max-width: getScreenSize(desktop-size)) {
     .header {
         min-height: 400px !important;
-    }
-    .header__content {
-        top: 25px;
+
+        &__content {
+            top: 25px;
+        }
     }
 }
+
 @media (max-width: getScreenSize(laptop-size)) {
     .header {
         background-position-x: right !important;
         min-height: 300px !important;
-    }
-    .header__content {
-        left: $--unset;
-        padding: 1.5rem 1.75rem;
-        top: $--unset;
-        transform: $--unfiltered;
+
+        &__content {
+            left: $--unset;
+            padding: 1.5rem 1.75rem;
+            top: $--unset;
+            transform: $--unfiltered;
+        }
     }
 }
+
 @media (max-width: getScreenSize(tablet-size)) {
     .header__content {
         background: rgb(255 255 255 / 75%);
