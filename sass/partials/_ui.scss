@@ -16,7 +16,7 @@ form {
 */
 .formfield, 
 .upload {
-    width: 100%;
+    width: $--full-width;
 }
 
 input, 
@@ -25,9 +25,9 @@ textarea,
 .upload {
     background: #f9f7f7;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: $--content-corner;
     display: inline-block;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: $--primary-font;
     margin: 1rem 0;
     padding: 1rem 1rem;
 }
@@ -45,7 +45,7 @@ select,
 
 textarea {
     height: 150px;
-    max-width: 100%;
+    max-width: $--full-width;
 }
 
 /*  LOGIN FORM
