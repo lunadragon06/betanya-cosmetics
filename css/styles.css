@@ -202,11 +202,13 @@ button {
   }
 }
 footer {
+  display: flex;
+  flex-shrink: 0;
+}
+.footer {
   background: #dc2a6b;
   color: #ffffff;
-  display: flex;
   flex-direction: row;
-  flex-shrink: 0;
   font-size: 14px;
   justify-content: space-between;
   padding: 1rem;
@@ -540,17 +542,14 @@ input[type=checkbox] {
   margin-bottom: 2rem;
   padding: 1rem;
 }
-
 .message.success {
   background: #e4ffe2;
   border: 1px solid #98e594;
   color: #043c31;
 }
-
 .message.warning {
   background: #ffe5ef;
   border: 1px solid #F23D91;
   color: #ce1e50;
 }
-
 /* Font import(s) *//*# sourceMappingURL=styles.css.map */
