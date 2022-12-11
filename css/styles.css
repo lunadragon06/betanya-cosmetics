@@ -1,35 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
-.message {
-  margin-bottom: 2rem;
-  padding: 1rem;
-}
-
-/* success */
-.message.success {
-  background: #e4ffe2;
-  border: 1px solid #98e594;
-  color: #043c31;
-}
-
-/* error and/or warning */
-.message.warning {
-  background: #ffe5ef;
-  border: 1px solid #F23D91;
-  color: #ce1e50;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 body, html {
   color: #071d03;
   font-family: "Noto Sans", sans-serif;
   height: 100%;
 }
-
 body {
   background: #fbfbfb;
   display: flex;
@@ -38,22 +17,18 @@ body {
   margin: 0;
   width: 100%;
 }
-
 h1 {
   font-size: 28px;
   text-align: center;
 }
-
 h2 {
   font-size: 18px;
   line-height: 25px;
 }
-
 i {
   color: #ffffff;
   font-size: 20px;
 }
-
 @media (max-width: 768px) {
   h1 {
     text-align: left;
@@ -64,22 +39,13 @@ i {
   max-width: 600px;
   padding: 2.5rem;
 }
-
-/* 
-    DEFAULT FORM STYLING  
-*/
 form {
   margin-top: 2rem;
 }
-
-/* 
-    Inputs ~ Layout 
-*/
 .formfield,
 .upload {
   width: 100%;
 }
-
 input,
 select,
 textarea,
@@ -92,68 +58,45 @@ textarea,
   margin: 1rem 0;
   padding: 1rem 1rem;
 }
-
 input:disabled {
   background: #d5d5d5;
 }
-
-/* Input placeholder text-color */
 select,
 .upload-txt,
 ::-webkit-input-placeholder {
   color: #646464;
 }
-
 textarea {
   height: 150px;
   max-width: 100%;
 }
-
-/*  LOGIN FORM
-    View typed password 
-*/
 .checkpassword {
   align-items: end;
   display: flex;
   justify-content: start;
 }
-
 .checkpassword__box {
   display: unset !important;
   margin: 0 0.75rem 0 0;
   width: 10px;
 }
-
 .checkpassword__pointer {
   font-size: 12px !important;
 }
-
-/*  
-    ADD PRODUCT FORM 
-*/
 .upload {
   padding: 2rem 1.5rem;
 }
-
 .upload i {
   color: #646464;
 }
-
 .upload__instrucs {
   font-size: 13px;
   margin-left: 0.5rem;
 }
-
-/* LAYOUT */
 button {
   border-radius: 4px;
   font-family: "Noto Sans", sans-serif;
 }
-
-/* 
-    HOME 
-    CTA-button 
-*/
 .header__ctabtn {
   background: #0e6500;
   border-radius: 4px;
@@ -165,12 +108,9 @@ button {
   text-decoration: none;
   transition: 0.5s;
 }
-
 .header__ctabtn:hover {
   background: #508200;
 }
-
-/* Cart button */
 .product__cartbtn {
   background: #e21675;
   border: none;
@@ -181,24 +121,17 @@ button {
   transition: 0.5s;
   width: 100%;
 }
-
 .product__cartbtn i {
   color: #ffffff;
   transition: 0.5s;
 }
-
 .product__cartbtn:hover {
   background: #d90d32;
 }
-
 .product__cartbtn:active,
 .product__cartbtn:focus {
   background: #0e6500;
 }
-
-/* 
-    ADMIN SECTIONS
-*/
 .display__addbtn {
   background: #e21675;
   border-radius: 4px;
@@ -209,13 +142,10 @@ button {
   text-decoration: none;
   transition: 0.5s;
 }
-
 .display__addbtn:hover,
 .productitem__setting-link:hover {
   background: #d90d32;
 }
-
-/* Edit single product */
 .productitem__setting-link {
   background: #e21675;
   border-radius: 4px;
@@ -223,14 +153,9 @@ button {
   text-align: center;
   transition: 0.5s;
 }
-
-/* 
-    FORM BUTTONS 
-*/
 #delete {
   margin-top: 1rem;
 }
-
 .delete,
 .formbtn {
   background: #e21675;
@@ -246,7 +171,6 @@ button {
   transition: 0.5s;
   width: 100%;
 }
-
 .delete:active,
 .form-btn:active,
 .delete:focus,
@@ -255,30 +179,23 @@ button {
 .formbtn:hover {
   background: #d90d32;
 }
-
-/* Update product button */
 #update {
   background: #097f67;
   color: #ffffff;
   margin-top: 1.5rem;
 }
-
 #update:hover {
   background: #056074;
 }
-
-/* Logout button */
 #logout {
   font-size: 20px;
   background: transparent;
   border: none;
   cursor: pointer;
 }
-
 #logout-icon {
   font-size: 24px;
 }
-
 @media (max-width: 768px) {
   .display__addbtn {
     margin: 2rem 0 1rem;
@@ -294,16 +211,13 @@ footer {
   justify-content: space-between;
   padding: 1rem;
 }
-
 .footer__media {
   display: flex;
   gap: 15px;
 }
-
 .wrapper {
   flex: 1 0 auto;
 }
-
 @media (max-width: 375px) {
   footer {
     flex-direction: column;
@@ -320,7 +234,6 @@ footer {
   min-height: 480px;
   position: relative;
 }
-
 .header__content {
   left: 25%;
   min-width: 200px;
@@ -329,13 +242,11 @@ footer {
   top: 75px;
   transform: translateX(-50%);
 }
-
 .header__heading {
   color: #e21675;
   font-size: 36px;
   text-align: left;
 }
-
 @media (max-width: 1280px) {
   .header {
     min-height: 400px !important;
@@ -366,13 +277,11 @@ footer {
 .loader {
   text-align: center;
 }
-
 .loader__text {
   font-size: 18px;
   font-weight: bold;
   margin: 5rem 0 1rem;
 }
-
 .loader__object {
   display: inline-block;
   height: 80px;
@@ -382,12 +291,9 @@ footer {
   width: 80px;
 }
 
-/* 
-Loader sculpting
-*/
 .loader__object div {
   -webkit-animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
-          animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
   background: #e21675;
   height: 32px;
   left: 32px;
@@ -395,7 +301,6 @@ Loader sculpting
   top: 32px;
   width: 32px;
 }
-
 .loader__object div:after,
 .loader__object div:before {
   background: #e21675;
@@ -405,20 +310,14 @@ Loader sculpting
   position: absolute;
   width: 32px;
 }
-
 .loader__object div:before {
   border-radius: 50% 0 0 50%;
   left: -24px;
 }
-
 .loader__object div:after {
   border-radius: 50% 50% 0 0;
   top: -24px;
 }
-
-/* 
-    Loader animation movement 
-*/
 @-webkit-keyframes lds-heart {
   0% {
     transform: scale(0.95);
@@ -470,7 +369,6 @@ Loader sculpting
   width: 100%;
   z-index: 999;
 }
-
 .menu__logo {
   color: #ffffff;
   font-family: "Noto Sans", sans-serif;
@@ -478,14 +376,9 @@ Loader sculpting
   margin-left: 25px;
   text-decoration: none;
 }
-
-/* 
-    HAMBURGER MENU TOGGLE
-*/
 input[type=checkbox] {
   display: none;
 }
-
 .menu__toggler {
   align-items: center;
   color: #ffffff;
@@ -498,30 +391,22 @@ input[type=checkbox] {
   display: flex;
   display: none;
 }
-
-/* Navigation bar menu */
 .menu .menu__links .menu__item {
   display: inline-block;
   font-family: "Noto Sans", sans-serif;
   font-size: 20px;
   padding: 0 15px;
 }
-
 .menu .menu__links .menu__item a {
   color: #ffffff;
   text-decoration: none;
 }
-
-/* 
-    USER INTERFACE MENU 
-*/
 .menu__userinterface {
   display: inline-flex;
   gap: 15px;
   margin-right: 25px;
   position: relative;
 }
-
 @media (max-width: 768px) {
   .menu__toggler {
     display: flex;
@@ -557,15 +442,10 @@ input[type=checkbox] {
   max-width: 1280px;
   padding: 2rem 3rem 0;
 }
-
-/* Single product display 
-  from homepage 
-*/
 .product {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 1px;
   flex: 1 0 200px;
 }
-
 .product__card {
   background: #ffffff;
   line-height: 50px;
@@ -573,7 +453,6 @@ input[type=checkbox] {
   padding: 1.5rem 1rem 2rem;
   text-align: center;
 }
-
 .product__img {
   border-radius: 4px 4px 0 0;
   height: 250px;
@@ -581,26 +460,18 @@ input[type=checkbox] {
      object-fit: cover;
   width: 100%;
 }
-
 .product__item {
   text-transform: capitalize;
 }
-
 .product__pricetag {
   font-size: 20px;
   margin-top: 0.5rem;
 }
-
-/* 
-  PRODUCTS ~ ADMIN PAGE 
-*/
 .display {
   margin: 4rem auto 6rem;
   max-width: 1280px;
   padding: 0 2.75rem;
 }
-
-/* Single product card */
 .productitem {
   background: #ffffff;
   border-radius: 4px;
@@ -611,11 +482,9 @@ input[type=checkbox] {
   margin: 2rem 0;
   padding: 1rem 1rem;
 }
-
 .productitem__content {
   display: flex;
 }
-
 .productitem__details {
   display: flex;
   flex-direction: column;
@@ -623,13 +492,11 @@ input[type=checkbox] {
   line-height: 25px;
   padding: 0 1.5rem;
 }
-
 .productitem__setting {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
 .productitem__view {
   border-radius: 50% !important;
   height: 150px;
@@ -637,7 +504,6 @@ input[type=checkbox] {
      object-fit: cover;
   width: 150px;
 }
-
 @media (max-width: 768px) {
   .display {
     margin: 2rem auto 2.5rem;
@@ -670,4 +536,21 @@ input[type=checkbox] {
     width: 100%;
   }
 }
+.message {
+  margin-bottom: 2rem;
+  padding: 1rem;
+}
+
+.message.success {
+  background: #e4ffe2;
+  border: 1px solid #98e594;
+  color: #043c31;
+}
+
+.message.warning {
+  background: #ffe5ef;
+  border: 1px solid #F23D91;
+  color: #ce1e50;
+}
+
 /* Font import(s) *//*# sourceMappingURL=styles.css.map */
