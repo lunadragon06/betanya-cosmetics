@@ -20,7 +20,6 @@ if (!id) {
 }
 
 const productUrl = baseUrl + "products/" + id;
-
 const form = document.querySelector("form");
 const name = document.querySelector("#name");
 const brand = document.querySelector("#brand");
@@ -31,7 +30,6 @@ const image = document.querySelector("#image");
 const description = document.querySelector("#description");
 const idInput = document.querySelector("#id");
 const message = document.querySelector(".message-container");
-
 const loading = document.querySelector(".loader");
 
 (async function () {
@@ -60,10 +58,8 @@ const loading = document.querySelector(".loader");
 })();
 
 form.addEventListener("submit", submitForm);
-
 function submitForm(event) {
     event.preventDefault();
-
     message.innerHTML = "";
 
     const nameValue = name.value.trim();
