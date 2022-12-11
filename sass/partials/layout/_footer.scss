@@ -1,16 +1,16 @@
 footer {
     background: get(primary-color);
     color: get(asset-color);
-    display: flex;
+    display: $--default-layout;
     flex-direction: row;
     flex-shrink: $--unset;
     font-size: 14px;
     justify-content: space-between;
-    padding: 1rem;
+    padding: $--white-space;
 }
 
 .footer__media {
-    display: flex;
+    display: $--default-layout;
     gap: 15px;
 }
 
@@ -23,9 +23,9 @@ footer {
         flex-direction: column;
         gap: 25px;
         padding: 2rem 2rem 3rem;
-        text-align: center;
+        text-align: $--site-display;
     }
     .footer__media {
-        justify-content: center;
+        justify-content: $--site-display;
     }
 }
