@@ -5,13 +5,10 @@ export default function createMenu() {
     const { pathname } = document.location;
     const navbar = document.querySelector(".menu");
     const username = getUsername();
-
     let authLink = `<a href="login.html" class="${pathname === "/login.html" ? "active" : ""}"><i class="fas fa-user"></i></a>`;
-
     if (username) {
         authLink = `<a id="logout"><i class="fas fa-sign-out-alt" id="logout-icon"></i></a>`;
     }
-    
     navbar.innerHTML = `<a href="/" class="menu__logo">Betanya Cosmetics</a>
                         <!-- Navbar toggler -->
                         <input type="checkbox" id="toggle">
