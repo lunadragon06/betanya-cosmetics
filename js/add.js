@@ -20,10 +20,8 @@ const description = document.querySelector("#description");
 const message = document.querySelector(".message-container");
 
 form.addEventListener("submit", submitForm);
-
 function submitForm(event) {
     event.preventDefault();
-
     message.innerHTML = "";
 
     const nameValue = name.value.trim();
@@ -36,13 +34,11 @@ function submitForm(event) {
     if (nameValue.length === 0 || brandValue.length === 0 || isNaN(priceValue) || isNaN(quantityValue) || categoryValue.length === 0 || descriptionValue.length === 0) {
         return displayMessage("warning", "Please fill in all fields the in this form.", ".message-container");
     }
-
     addProduct(nameValue, brandValue, priceValue, quantityValue, categoryValue, descriptionValue);
 }
 
 async function addProduct(name, brand, price, quantity, category, description) {
     const url = baseUrl + "products";
-
     const data = JSON.stringify({ name: name, brand: brand, price: price, quantity: quantity, category: category, description: description });
 
     const options = {
@@ -66,8 +62,6 @@ async function addProduct(name, brand, price, quantity, category, description) {
         if (json.error) {
             displayMessage("error", json.message, ".message-container");
         }
-
-        console.log(json);
     } catch (error) {
         console.log(error);
         displayMessage("error", "Failed to add new product! Please try again later.", ".message-container");
