@@ -1,17 +1,24 @@
-footer {
+.footer {
     background: get(primary-color);
     color: get(asset-color);
-    display: $--default-layout;
     flex-direction: row;
-    flex-shrink: $--unset;
     font-size: 14px;
     justify-content: space-between;
     padding: $--white-space;
+
+    &__media {
+        display: $--default-layout;
+        gap: 15px; 
+    }
 }
 
-.footer__media {
+/* 
+    core values to footer
+    to make sure to keep it down 
+*/
+footer {
     display: $--default-layout;
-    gap: 15px;
+    flex-shrink: $--unset;
 }
 
 @media (max-width: getScreenSize(mobile-size)) {
