@@ -36,9 +36,10 @@ It is recommended that this site is opened and viewed from VSC (Visual Studio Co
 If ``Go Live`` doesn't exsist, ``Live Server`` should be installed and then restart code editor before we can get the most out of previewing site.  
 ## 🔗 Contributing
 To contribute to this project, you can fork this project or please create a new branch that can be reviewed and merged.
+## 🗨️ Acknowledgments
+I would like to thank [Priscila](https://www.github.com/pkderlam87), [Tiffany](https://www.github.com/utvaer), and the rest of my classmates and tutors at Noroff for your support; including [MJ Phillip](https://www.github.com/MJPhillip) & [Connor O'Brien](https://www.github.com/cnnrbrn).
 ## 🤙 Contact me
 [LinkedIn](https://www.linkedin.com/in/monika-lie/)
 <br>
 [Student email](mailto:monlie16236@stud.noroff.no) 
-<br>
-<br>
+<br><br>
