@@ -22,6 +22,8 @@ I used these following tech stack to build this project:
 - [NPM](https://www.npmjs.com/)
 - [SASS](https://sass-lang.com/)
 - [Strapi](https://strapi.io/) 
+## 🏅 License
+This is a redesign and attempted improved version of [this semester project repo](https://github.com/LunaDragon666/sp-2/) of mine from my other GitHub account (where the used API link doesn't exsist from now on), which I didn't manage to finish for Portfolio 2 submission in time in this case.
 ## 🚀 Getting Started
 ### How to view this project successfully ✨
 ``Download ZIP`` directly from this repo by clicking on the green ``<> Code`` button, or clone the repo by typing this command in your terminal:
@@ -33,9 +35,7 @@ It is recommended that this site is opened and viewed from VSC (Visual Studio Co
 <br><br>
 If ``Go Live`` doesn't exsist, ``Live Server`` should be installed and then restart code editor before we can get the most out of previewing site.  
 ## 🔗 Contributing
-To contribute to this project, please create a new branch that can be reviewed and merged.
-## 🏅 License
-This is a redesign and attempted improved version of [this semester project repo](https://github.com/LunaDragon666/sp-2/) of mine from my other GitHub account(where the used API link doesn't exsist anymore), which I didn't manage to finish for Portfolio 2 submission on time in this case.
+To contribute to this project, you can fork this project or please create a new branch that can be reviewed and merged.
 ## 🤙 Contact me
 [LinkedIn](https://www.linkedin.com/in/monika-lie/)
 <br>
